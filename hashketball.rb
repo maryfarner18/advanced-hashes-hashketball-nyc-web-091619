@@ -94,6 +94,7 @@ def player_stats(name)
   find_player(name)[:stats]
 end
 
+
 def big_shoe_rebounds
   biggest_foot = {}
   max = 0 
@@ -105,8 +106,8 @@ def big_shoe_rebounds
       end
     end
   end
-  
   biggest_foot[:stats][:rebounds]
+  
 end
 
 def most_points_scored
