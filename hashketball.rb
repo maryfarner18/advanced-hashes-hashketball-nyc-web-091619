@@ -39,8 +39,27 @@ def game_hash
   
 end
 
+def find_player(name)
+  game_hash.each do |location, team_data|
+    game_hash[location][:players].each_with_index do |player, index|
+      if player[:name] == name then
+        return player
+      end
+    end
+  end
+end
 
 def num_points_scored(name)
+  game_hash.each do |location, team_data|
+    game_hash[location][:players].each_with_index do |player, index|
+      if player[:name] == name then
+        return player[:stats][:points]
+      end
+    end
+  end
+end
+
+def shoe_size(name)
   game_hash.each do |location, team_data|
     game_hash[location][:players].each_with_index do |player, index|
       if player[:name] == name then
