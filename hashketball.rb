@@ -106,7 +106,7 @@ def big_shoe_rebounds
     end
   end
   
-  biggest_foot[:states][:rebounds]
+  biggest_foot[:stats][:rebounds]
 end
 
 def most_points_scored
