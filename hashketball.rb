@@ -95,6 +95,18 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
+  biggest_foot = {}
+  max = 0 
+  game_hash.each do |location, team_data| # loop home/away
+    team_data[:players].each do |player|
+      if player[:stats][:shoe] > max then
+        max = player[:stats][:shoe]
+        biggest_foot = player
+      end
+    end
+  end
+  
+  biggest_foot[:states][:rebounds]
 end
 
 def most_points_scored
