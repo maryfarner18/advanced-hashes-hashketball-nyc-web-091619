@@ -150,6 +150,8 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  check = player_with_longest_name
+   longest_name = find_player(player_with_longest_name)
+   
+  
 end
 
