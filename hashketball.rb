@@ -87,7 +87,7 @@ def player_numbers(team)
   info[:players].each do |player|
     result.push(player[:stats][:number])
   end
-
+  result
 end
 
 def player_stats
