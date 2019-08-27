@@ -81,8 +81,10 @@ def team_names
 end
 
 def player_numbers(team)
-  game_hash.each do |location, team_data|
-    if team_data.
+  info = find_team(team)
+  result = []
+  info[:players].each do |player|
+    result.push(player[:stats][:number])
   end
 end
 
