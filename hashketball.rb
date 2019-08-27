@@ -124,11 +124,10 @@ def most_points_scored
 end
 
 def winning_team
-  home = 0 
-  away = 0 
+  score = { home: 0, away: 0} 
   game_hash.each do |location, team_data| # loop home/away
-  team_data[:players].each do |player|
-      if player[:stats][:points] > max then
+    team_data[:players].each do |player|
+       player[:stats][:points] > max then
         max = player[:stats][:points]
         most_scored = player
       end
