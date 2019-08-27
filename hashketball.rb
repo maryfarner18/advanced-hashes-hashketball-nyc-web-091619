@@ -132,7 +132,7 @@ def winning_team
     end
   end
 
-  (score[:home] > score[:away]? game_hash[:home][team_name] : game_hash[:away][:team_name] )
+  (score[:home] > score[:away]? game_hash[:home][:team_name] : game_hash[:away][:team_name] )
 end
 
 def long_name_steals_a_ton?
