@@ -21,7 +21,10 @@ def game_hash
       team_name: "Charlotte Hornets",
       colors: ["Turquoise", "Purple"],
       players: [
-        { "Jeff Adrien" => { number: 4, shoe: 18, points: 10, rebounds: 1, assists: 1, steals: 2, blocks: 7, slam_dunks: 2}}
+        { name: "Jeff Adrien", stats: { number: 4, shoe: 18, points: 10, rebounds: 1, assists: 1, steals: 2, blocks: 7, slam_dunks: 2}},
+        { name: "Bismack Biyombo", stats: { number: 11, shoe: 17, points: 17, rebounds: 19, assists: 10, steals: 3, blocks: 1, slam_dunks: 15}},
+        { name: "DeSagna Diop", stats: { number: 1, shoe: 19, points: 26 rebounds: 11, assists: 6, steals: 3, blocks: 8, slam_dunks: 5}},
+        { name: "Ben Gordon", stats: { number: 31, shoe: 15, points: 19, rebounds: 2, assists: 2, steals: 4, blocks: 11, slam_dunks: 1}}
           
         ]
     } 
