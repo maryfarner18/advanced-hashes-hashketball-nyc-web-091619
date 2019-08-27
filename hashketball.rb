@@ -70,6 +70,6 @@ def team_names
   game_hash.each do |location, team_data|
     result.push(team_data[:team_name])
   end
-  
+  result
 end
 
