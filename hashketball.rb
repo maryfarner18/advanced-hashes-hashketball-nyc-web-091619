@@ -59,7 +59,7 @@ end
 
 def team_colors(team)
   game_hash.each do |location, team_data|
-    if location == team then
+    if team_data[:team_name] == team then
       return location[:colors]
     end
   end
