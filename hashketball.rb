@@ -30,7 +30,10 @@ end
 
 def num_points_scored(name)
   game_hash.each do |location, team_data|
-    
+    game_hash[location][:players].each_with_index do |player, index|
+      
+      
+    end
   end
 end
 
