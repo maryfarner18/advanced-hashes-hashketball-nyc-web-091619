@@ -120,6 +120,7 @@ def most_points_scored
       end
     end
   end
+  puts "max = #{max}"
   most_scored[:name]
 end
 
