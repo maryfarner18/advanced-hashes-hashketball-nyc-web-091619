@@ -124,6 +124,12 @@ def most_points_scored
 end
 
 def winning_team
+  home = 0 
+  away = 0 
+  game_hash.each do |location, team_data| # loop home/away
+    
+  end
+  
 end
 
 def long_name_steals_a_ton?
