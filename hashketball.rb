@@ -49,6 +49,13 @@ def find_player(name)
   end
 end
 
+def find_team(name)
+   game_hash.each do |location, team_data|
+     if team_data[:team_name] == name
+       return team_data
+   end
+end
+
 def num_points_scored(name)
   find_player(name)[:stats][:points]
 end
