@@ -150,10 +150,10 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-   longest_name = find_player(player_with_longest_name)
-   most_steals = {}
-   max = 0 
-   game_hash.each do |location, team_data| 
+  longest_name = find_player(player_with_longest_name)
+  most_steals = {}
+  max = 0 
+  game_hash.each do |location, team_data| 
     team_data[:players].each do |player|
       if player[:stats][:steals] > max then 
         max = player[:stats][:steals]
