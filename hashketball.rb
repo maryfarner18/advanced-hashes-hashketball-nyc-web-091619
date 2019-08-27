@@ -116,10 +116,10 @@ def most_points_scored
   puts "hi"
   game_hash.each do |location, team_data| 
     team_data[:players].each do |player|
-      if player[:stats][:points] > max then {
+      if player[:stats][:points] > max then 
         max = player[:stats][:points]
         most_scored = player
-      }end
+      end
     end
   end
   
@@ -132,9 +132,9 @@ def winning_team
   game_hash.each do |location, team_data| # loop home/away
     team_data[:players].each do |player|
        score[location] += player[:stats][:points]
-      end
     end
   end
+
   (score[:home] > score[:away]? game_hash[:home][team_name] : game_hash[:away][team_name] )
 end
 
