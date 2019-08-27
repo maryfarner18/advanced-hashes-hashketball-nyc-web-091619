@@ -73,11 +73,24 @@ def team_names
   result
 end
 
-def player_numbers
+def player_numbers(team)
+  game_hash.each do |location, team_data|
+    if team_data.
+  end
 end
 
 def player_stats
 end
 
 def big_shoe_rebounds
+end
+
+def most_points_scored
+end
+
+def winning_team
+end
+
+def long_name_steals_a_ton?
+end
 
