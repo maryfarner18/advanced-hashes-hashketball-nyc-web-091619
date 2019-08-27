@@ -90,7 +90,8 @@ def player_numbers(team)
   result
 end
 
-def player_stats
+def player_stats(name)
+  find_player(name)[:stats]
 end
 
 def big_shoe_rebounds
